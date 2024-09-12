@@ -1,0 +1,223 @@
+header {
+    width: 100%;
+    background-color: #0d1425;
+    padding-top: 15px;
+}
+
+.fh-user {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+.fhu-top {
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: .1rem solid rgba(248, 250, 252, .1);
+}
+
+.fhut-left {
+    width: 20%;
+}
+
+.fhut-left img {
+    width: 100%;
+}
+
+.fhut-between {
+    width: 30%;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.fhut-between button {
+    font-size: 13px;
+    font-family: 600;
+    color: white;
+    letter-spacing: -1px;
+}
+
+.fhut-right {
+    width: 50%;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.f-search {
+    position: relative;
+}
+
+.f-search input {
+    width: 280px;
+    border-radius: 20px;
+    padding: 9px;
+    padding-left: 15px;
+    color: grey;
+    border: none;
+}
+
+.f-search i {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+}
+
+.f-login a {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    gap: 0.5em;
+    color: white;
+}
+
+.fl-user {
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.f-nn {
+    color: white;
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+
+.fnn-vn {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+}
+
+.fnn-vn img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.fhu-bot {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.block-fcr {
+    color: white;
+    cursor: pointer;
+}
+
+.block-fcr:hover {
+    color: rgb(231, 214, 57);
+}
+
+.fb-menu-left {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 38px;
+    margin-bottom: none;
+}
+
+.fuc {
+    padding: 0;
+    display: flex;
+    gap: 2em;
+}
+
+.fb-menu-left ul li {
+    list-style: none;
+}
+
+.menu_rap {
+    height: 40px;
+}
+
+.fb-menu-left ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.fb-menu-left ul li a:hover {
+    color: rgb(231, 214, 57);
+}
+
+.fb-menu-right ul {
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.fb-menu-right ul li {
+    list-style: none;
+}
+
+.fb-menu-right ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.fb-menu-right ul li a:hover {
+    color: rgb(231, 214, 57);
+}
+
+///
+.f-crap {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #0d1425;
+    border: .1rem solid rgba(248, 250, 252, .1);
+    z-index: 1000;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    top: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    animation: anima ease 0.4s;
+}
+
+.f-crap li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.block-fcr:hover .f-crap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    padding: 0 1rem 1rem;
+    gap: 1.5em;
+    padding: 10px;
+    opacity: 1;
+    animation: anima ease 0.4s forwards;
+}
+
+.f-crap li:hover {
+    color: yellow;
+}
+
+@keyframes anima {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

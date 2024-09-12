@@ -1,0 +1,142 @@
+.Home_user {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.carousel-control-next {
+    right: -130px !important;
+}
+
+.carousel-control-prev {
+    left: -130px !important;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 385px;
+}
+
+// book_tickets
+
+.from_book_tickets {
+    width: 100%;
+    padding: 10px;
+    border-radius: .4rem;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dvn {
+    letter-spacing: -3px;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.from_add_bt form {
+    display: flex;
+    gap: 1em;
+}
+
+.from_add_bt form .form-select {
+    height: 50px;
+    width: 200px;
+    color: #663399;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.btn {
+    background-color: #663399;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+// ListMovie
+
+.ContentName {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -5px;
+    text-align: center;
+}
+
+.movie_list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 20px;
+}
+
+.movie_item {
+    position: relative;
+    border: 0.1rem solid rgba(248, 250, 252, 0.4);
+    border-radius: 8px;
+    transition: opacity 0.4s ease-in-out;
+    animation: anima ease 0.2s;
+}
+
+.movie_image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.function_movie {
+    display: none;
+}
+
+.from_function_movie {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+}
+
+.function_movie div i {
+    color: #FFD43B;
+}
+
+.movie_item:hover .function_movie {
+    display: block;
+    position: absolute;
+    top: 0px;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+    animation: anima ease 0.4s forwards;
+    color: white;
+}
+
+@keyframes anima {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
