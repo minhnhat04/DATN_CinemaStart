@@ -1,0 +1,147 @@
+.promotion {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.promotion-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.promotion-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.promotion-content {
+    width: 54.1666666667%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promotion-details {
+    width: 100%;
+    color: #f8fafc;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 1rem;
+    gap: 0.2rem;
+}
+
+.promotion-details2 {
+    width: 100%;
+    color: #f8fafc;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+    gap: 0.2rem;
+}
+
+.promotion-details2 h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -2px;
+}
+
+.promotion-details2 p {
+    font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    margin: 0 !important;
+}
+
+.promotion-details h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -2px;
+}
+
+.promotion-details p {
+    font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    margin: 0 !important;
+}
+
+.pr-detail1 {
+    width: 100%;
+
+}
+
+.pr-detail1 p {
+    font-size: 18px;
+    color: #f8fafc;
+    margin: 0 !important;
+}
+
+.pr-detail1 li {
+    color: #f8fafc;
+}
+
+.contact-button {
+    width: 32%;
+    background-color: #ffe40e;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #ddc615;
+    transform: scale(1.05);
+}
+
+.contact-button:active {
+    background-color: #cdb818;
+    transform: scale(0.98);
+}
+
+.contact-button:focus {
+    outline: none;
+}
+
+
+.promotion-img {
+    width: 54.1666666667%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.promotion-img img {
+    width: 100%;
+}
+
+.promotion-img img {
+    width: 100%;
+    height: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.promotion-img img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.pr-detail1 li {
+    font-size: 15px;
+}

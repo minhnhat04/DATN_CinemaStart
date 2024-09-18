@@ -43,7 +43,7 @@ header {
 .fhut-right {
     width: 50%;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
     justify-content: flex-end;
 }
@@ -53,12 +53,11 @@ header {
 }
 
 .f-search input {
-    width: 280px;
     border-radius: 20px;
-    padding: 9px;
-    padding-left: 15px;
+    padding: 9px 3rem 9px 10px;
     color: grey;
     border: none;
+    font-size: 15px;
 }
 
 .f-search i {
@@ -73,6 +72,7 @@ header {
     align-items: center;
     gap: 0.5em;
     color: white;
+    font-size: 15px;
 }
 
 .fl-user {
@@ -141,6 +141,7 @@ header {
 
 .fb-menu-left ul li {
     list-style: none;
+    font-size: 16px;
 }
 
 .menu_rap {
@@ -150,6 +151,7 @@ header {
 .fb-menu-left ul li a {
     text-decoration: none;
     color: white;
+    font-size: 16px;
 }
 
 .fb-menu-left ul li a:hover {
@@ -159,7 +161,7 @@ header {
 .fb-menu-right ul {
     padding: 0;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .fb-menu-right ul li {

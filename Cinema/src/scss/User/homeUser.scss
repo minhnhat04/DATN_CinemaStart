@@ -1,3 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .Home_user {
     background-color: transparent;
     display: flex;
@@ -15,12 +21,11 @@
 
 .carousel-item img {
     width: 100%;
-    height: 100%;
+    height: 400px;
 }
 
 .carousel-item {
     width: 100%;
-    height: 385px;
 }
 
 // book_tickets
@@ -38,7 +43,7 @@
 .dvn {
     letter-spacing: -3px;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .from_add_bt form {
@@ -50,7 +55,7 @@
     height: 50px;
     width: 200px;
     color: #663399;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -62,33 +67,96 @@
 }
 
 // ListMovie
+.div_phimdanchieu {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
 
 .ContentName {
     color: white;
     font-size: 50px;
-    font-weight: 700;
-    letter-spacing: -5px;
+    letter-spacing: -2px;
     text-align: center;
 }
 
+
+.ContentName h1 {
+    font-weight: 700;
+}
+
 .movie_list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    margin-top: 20px;
+    display: flex;
+    // justify-content: space-between;
+    gap: 20px;
+    height: 100%;
+}
+
+.tral_movie {
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+}
+
+.tral_movie i {
+    color: red;
+}
+
+.div_play {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 15px;
+}
+
+.fu_movie {
+    display: flex;
+    flex-direction: column;
+}
+
+.name_movie {
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    padding: 20px 5px 0 5px;
+    height: 110px;
+    font-size: 0.8rem;
+}
+
+.play_tm {
+    border: 0.1rem solid rgba(248, 250, 252, 0.4);
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.name_movie:hover {
+    color: #FFD43B;
+}
+
+.carousel-item.active .movie_list {
+    transform: translateX(0);
 }
 
 .movie_item {
     position: relative;
-    border: 0.1rem solid rgba(248, 250, 252, 0.4);
-    border-radius: 8px;
     transition: opacity 0.4s ease-in-out;
     animation: anima ease 0.2s;
+    width: 24%;
+    height: 100%;
+    cursor: pointer;
+    padding: 5px;
 }
 
 .movie_image {
-    width: 100%;
+    width: 50%;
     height: auto;
+    border-radius: 8px;
+    border: 0.1rem solid rgba(248, 250, 252, 0.4);
     border-radius: 8px;
 }
 
@@ -106,7 +174,7 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    
+
 }
 
 .function_movie div i {
@@ -116,10 +184,10 @@
 .movie_item:hover .function_movie {
     display: block;
     position: absolute;
-    top: 0px;
+    top: 2px;
     border-radius: 8px;
-    width: 100%;
-    height: 100%;
+    width: 97%;
+    height: 405px;
     background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     flex-direction: column;
@@ -139,4 +207,224 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.button_xemthem {
+    text-align: center;
+}
+
+.button_xemthem a {
+    padding: 0.6rem 5rem;
+    border-radius: 5px;
+    border: 0.1rem solid #FFD43B;
+    background-color: none;
+    color: #FFD43B;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    transition: background 1s;
+}
+
+.button_xemthem a:hover {
+    background-color: #FFD43B;
+    color: black;
+}
+
+// list-km
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.ctn_km h1 {
+    color: white;
+    letter-spacing: -2px;
+    font-weight: 700;
+}
+
+.listKm {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.kmItem {
+    width: 100%;
+}
+
+.kmItem img {
+    width: 100%;
+    height: auto;
+}
+
+// contact
+.contact_item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_item-banner {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact_item-banner-name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -3px;
+    color: white;
+    text-align: center;
+}
+
+.contact_item-banner-img {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.img_item {
+    background: linear-gradient(to right, #5B3EA4, #3A60C6);
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+    border-radius: 20px;
+}
+
+.img_item_zalo {
+    background: linear-gradient(to left, #5B3EA4, #3A60C6);
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+    border-radius: 20px;
+}
+
+.img_item-img {
+    width: 40%;
+    position: absolute;
+    left: -3rem;
+    top: -2.5rem;
+}
+
+.img_item-img-zalo {
+    width: 40%;
+    position: absolute;
+    right: -3rem;
+    top: 0.1rem;
+}
+
+.img_item-img-zalo img {
+    width: 100%;
+}
+
+.img_item-img img {
+    width: 100%;
+}
+
+.img_item-name {
+    width: 100%;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+    letter-spacing: -2px;
+    font-weight: 700;
+}
+
+.img_item-name a {
+    color: white;
+    text-decoration: none;
+}
+
+.img_item-name-zalo a {
+    color: white;
+    text-decoration: none;
+}
+
+.img_item-name-zalo {
+    width: 100%;
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    letter-spacing: -2px;
+    font-weight: 700;
+}
+
+.contact_item-form {
+    width: 55%;
+    background-color: #3258B3;
+    padding: 2rem;
+    border-radius: 10px
+}
+
+.contact-form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.contact-form_name {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+.form_contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form_contact_item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form_contact_item i {
+    color: #FFD43B;
+}
+
+.form_contact-item_content {
+    font-size: 15px;
+    color: white;
+}
+
+.contact_item_input input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 18px;
+    color: #B0A3B8;
+}
+
+.contact_item_input textarea {
+    width: 100%;
+    height: 12rem;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 18px;
+    color: #CBD5E0;
+}
+
+.contact_item_input {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact_item-button{
+    padding: 0.4rem 4rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #FFD43B;
 }

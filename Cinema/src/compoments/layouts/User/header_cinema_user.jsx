@@ -85,13 +85,13 @@ function HeaderCinemaUser() {
               <div className="fb-menu-right">
                 <ul>
                   <li>
-                    <a href="">Khuyến mãi</a>
+                    <a href="Promotion">Khuyến mãi</a>
                   </li>
                   <li>
-                    <a href="">Thuê sự kiện</a>
+                    <a href="Event">Thuê sự kiện</a>
                   </li>
                   <li>
-                    <a href="">Tất cả các giải trí</a>
+                    <a href="All">Tất cả các giải trí</a>
                   </li>
                   <li>
                     <a href="Introduce">Giới thiệu</a>

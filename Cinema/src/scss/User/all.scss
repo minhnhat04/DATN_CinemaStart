@@ -1,0 +1,29 @@
+.all {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 20px;
+}
+
+.all h3 {
+    font-size: 35px;
+    color: #f8fafc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.all a img {
+    width: 100%;
+    height: auto;
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.all a img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 223, 0, 0.5), 0 12px 12px rgba(255, 223, 0, 0.1);
+}

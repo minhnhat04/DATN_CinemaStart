@@ -1,5 +1,8 @@
 import BookTicketsQuickly from "./functionCompoments/BookTicketsQuickly";
-import ListMovie from "./functionCompoments/ListMovie";
+import Contact from "./functionCompoments/contact";
+import ListKm from "./functionCompoments/ListKm";
+import ListMovieShowing from "./functionCompoments/ListMovieShowing";
+import ListMovieUpcoming from "./functionCompoments/ListMovieUpcoming";
 function PageHomeUser() {
   return (
     <>
@@ -19,13 +22,6 @@ function PageHomeUser() {
                   className="d-block w-100"
                   src="/src/styles/img/lam-giau-voi-ma-2048_1723108931285.jpg"
                   alt="Second slide"
-                />
-              </div>
-              <div className="carousel-item">
-                <img
-                  className="d-block w-100"
-                  src="/src/styles/img/bay.webp"
-                  alt="Third slide"
                 />
               </div>
               <div className="carousel-item">
@@ -77,12 +73,40 @@ function PageHomeUser() {
             </button>
           </div>
         </div>
-        <div>
+        <div className="div_datve">
           <BookTicketsQuickly />
         </div>
-        <div>
-          <ListMovie />
+        <div className="div_phimdanchieu">
+          <div className="ContentName">
+            <h1>PHIM ĐANG CHIẾU</h1>
+          </div>
+          <ListMovieShowing />
+          <div className="button_xemthem">
+            <a href="">XEM THÊM</a>
+          </div>
         </div>
+        <div className="div_phimdanchieu">
+          <div className="ContentName">
+            <h1>PHIM SẮP CHIẾU</h1>
+          </div>
+          <ListMovieUpcoming />
+          <div className="button_xemthem">
+            <a href="">XEM THÊM</a>
+          </div>
+        </div>
+        <div className="container">
+          <div className="ctn_km">
+            <h1>KHUYẾN MÃI</h1>
+          </div>
+          <ListKm />
+          <div className="button_xemthem">
+            <a href="">TẤT CẢ ƯU ĐÃI</a>
+          </div>
+        </div>
+        <div className="div_contact">
+        <Contact />
+        </div>
+
       </div>
     </>
   );

@@ -9,7 +9,7 @@ html, body{
 }
 body{
   grid-template-rows: 1fr 50px;
-  background: linear-gradient(to bottom,  #0d1425 19%, #223f7d , #392461);
+  background: linear-gradient(to bottom,  #0d1425 19%, #223f7d , #392461, #0F172A);
 }
 main{
   width: 80%;
